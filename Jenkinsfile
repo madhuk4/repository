@@ -3,6 +3,10 @@ pipeline {
  parameters {
   choice choices: ['dev', 'prod', 'sit', 'prepod'], description: 'Select an Environment!', name: 'ENV'
  }
+ environment {
+  JAVA_HOME = "/opt/java/bin"
+ }
+
 
  stages {
    stage('working with variables') {
