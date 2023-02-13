@@ -4,6 +4,7 @@ pipeline {
    stage('working with condition') {
       steps {
         script {
+         input message: 'Enter var1 value', parameters: [string(name: 'VAR1', trim: true)]
          var1 = 10
          if (var1 == 10 ) {
          println "my var1 value is 10"
