@@ -16,10 +16,14 @@ pipeline {
           println "my val1 value is ${val1}"
           //parameters values
           println "my parameter value is ${params.ENV}"
+          //environment values
+          println "my environment value is ${env.JAVA_HOME}
+          sh"java -version"
         }
       }
     }
   }
 }
+   
    
    
