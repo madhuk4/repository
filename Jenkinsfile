@@ -8,9 +8,9 @@
            If (var1.toInterger() == 10) {
              println "my var1 value is 10"
            }
-           else {
-             println "my var1 value is not 10"
-           }
+             else {
+              println "my var1 value is not 10"
+            }
          }
        }
      }
