@@ -1,17 +1,15 @@
 pipeline {
- agent any
+ agent any {
  stages {
-  stage('working with condition') {
-    steps {
-     script {
-       var1 = input message: 'Enter var1 value', parameters: [string(name: 'VAR1', trim: true)]
-       if (var1.toInteger() == 10 ) {
-       println "my var1 value is 10"
-       }
-       else {
-       println "my var1 value is not 10"
-       }
-     }
+    stage('working with loops') {
+      steps {
+        script {
+          a = 1
+          while (a <= 10 ) {
+            println "a vale is ${a}"
+            a = a + 1
+        }
+      }
     }
   }
 }
