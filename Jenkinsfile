@@ -2,7 +2,7 @@ def myfn() {
     println "function is been called"
 }
 def myadd (int a, int b) {
-    sum a + b
+    sum = a + b
     println "add of ${a} and ${b} is ${sum}"
 }
 
