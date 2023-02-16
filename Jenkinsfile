@@ -14,8 +14,8 @@ pipeline {
          script {
            myfn()
            myadd (100,200)
-           myadd
-           myadd (b = 3 , a = 1)
+           myadd()
+           myadd (b=3,a=1)
          }
        }
      }
