@@ -1,3 +1,6 @@
+def myfn() {
+    println "function is been called"
+}
 pipeline {
   agent any 
   stages {
