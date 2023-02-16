@@ -1,5 +1,5 @@
 pipeline {
-  agent any {
+  agent any 
   stages {
      stage('working with loops') {
        steps {
@@ -8,10 +8,9 @@ pipeline {
            while (a <= 10 ) {
              println "a vale is ${a}"
              a = a + 1
+           }
          }
        }
      }
    }
  }
-  }
-     
