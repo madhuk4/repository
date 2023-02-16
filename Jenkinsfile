@@ -2,7 +2,7 @@ def myfn() {
     println "function is been called"
 }
 
-pipelien {
+pipeline {
   agent any
   stages {
      stage('working with functions') {
