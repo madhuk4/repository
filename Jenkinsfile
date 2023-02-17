@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
            File file = new File("/tmp/mydata.txt")
-           println file.readlines()
+           println file.readLines()
         }
       }
     }
