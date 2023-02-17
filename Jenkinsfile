@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
            File file = new File("/tmp/mydata.txt")
-           File.write("Hi Team I am writting data from jenkins") 
+           file.write("Hi Team I am writting data from jenkins") 
         }
       }
     }
