@@ -5,11 +5,7 @@ pipeline {
       steps {
         script {
            File file = new File("/tmp/mydata.txt")
-               //println file.readLines()
-              //for (line in file.readLines()) {
-             //println line
-            //} 
-           file.write("Hi Team I am writting data from jenkins") 
+           File.write("Hi Team I am writting data from jenkins") 
         }
       }
     }
